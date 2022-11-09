@@ -1,0 +1,17 @@
+.more-info-container {
+  font-family: 'worksans';
+  .more-info-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 42.23px;
+  }
+  p {
+    font-size: 12px;
+  }
+  @media (min-width: 576px) {
+    font-size: 36px;
+    p {
+      font-size: 14px;
+    }
+  }
+}

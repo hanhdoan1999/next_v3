@@ -1,0 +1,68 @@
+@import '../../../sass/0-settings/colors';
+
+@media (max-width: 768px) {
+  .list-small-cate {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .list-small-cate {
+    font-family: 'WorkSans';
+    margin-bottom: 60px;
+    .small-cate-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-size: cover;
+      background-repeat: repeat;
+      background-position: center;
+      height: 90px;
+      width: 100%;
+      border-radius: 5px;
+      font-size: 18px;
+      font-weight: 400;
+      background: $color__light-blue;
+      p.title-cate {
+        line-height: 26px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        z-index: 3;
+        color: $white;
+        width: 121px;
+        text-align: center;
+      }
+    }
+    .last-item {
+      border: 1px solid $color__light-blue;
+      border-radius: 5px;
+      .view-more {
+        padding: 0;
+        a {
+          margin: 0 auto;
+          p {
+            color: $color__text-white;
+          }
+          svg path {
+            stroke: white;
+          }
+        }
+      }
+    }
+    .indoor-cate {
+      background-image: url('../../../images/Small_Cate_IN-DOOR.jpg');
+    }
+    .outdoor-cate {
+      background-image: url('../../../images/Small_Cate_OUT_DOOR.jpg');
+    }
+    .pool-side-cate {
+      background-image: url('../../../images/Small_Cate_POOL_SIDE.jpg');
+    }
+    .custom-cate {
+      background-image: url('../../../images/Small_Cate_CUSTOM.jpg');
+    }
+    .function-cate {
+      background-image: url('../../../images/Small_Cate_FUNCTION.jpg');
+    }
+  }
+}

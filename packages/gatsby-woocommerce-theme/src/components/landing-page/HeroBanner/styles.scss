@@ -1,0 +1,103 @@
+@import "../../../sass/0-settings/colors";
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+.landing-page-banner-hero {
+  padding: 50px 0px 0px 0px;
+  margin-bottom: 30px;
+  font-family: "WorkSans";
+  position: relative;
+
+  @media (max-width: 768px) {
+    padding-bottom: 0;
+
+    .banner-slide {
+      position: relative;
+      margin: 0 auto;
+
+      .banner-text {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #ffff;
+        .small-title-bottom {
+          display: none;
+        }
+        button {
+          margin-top: 46px;
+          text-transform: uppercase;
+          padding: 15px 20px;
+        }
+      }
+    }
+    .slick-dots {
+      bottom: 20px;
+    }
+  }
+
+  @include mobile {
+    padding-top: 0;
+
+    .banner-image {
+      padding: 0 !important;
+    }
+
+    .banner-text {
+      button {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+
+        text-transform: uppercase;
+
+        /* #FFFFFF */
+
+        color: #ffffff;
+        width: auto;
+        padding: 15px 30px;
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .banner-image {
+      .lazy-load-image-background {
+        width: 100%;
+        img {
+          max-height: 500px;
+          object-fit: cover;
+        }
+      }
+    }
+    .banner-slide {
+      display: flex !important;
+      .hero-info {
+        margin-top: 15%;
+      }
+
+      .small-title-bottom {
+        margin-top: 20px;
+        margin-bottom: 50px;
+      }
+    }
+    .slide-index {
+      position: absolute;
+      bottom: calc(8% + 5px);
+      left: 42%;
+      .active-index {
+        font-size: 48px;
+      }
+      .total-slide {
+        font-size: 36px;
+        color: #bfbfbf;
+      }
+    }
+  }
+}

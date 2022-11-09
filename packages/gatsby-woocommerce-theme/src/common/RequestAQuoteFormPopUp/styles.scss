@@ -1,0 +1,109 @@
+.request-a-quote-form {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  height: 100vh;
+  overflow: auto;
+  outline: none;
+  top: 40px;
+  left: 23px;
+  right: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-bottom: 30px;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  outline: none;
+
+  .close-btn {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: #2d2d2d;
+    border: none;
+    svg {
+      font-size: 1.5em;
+      fill: #fff;
+    }
+  }
+  .container {
+    padding: 0;
+    height: 100%;
+    .mobile-quote-image {
+      img {
+        width: 170px;
+        height: 170px;
+        margin: 15px auto;
+        display: block;
+      }
+    }
+    .product-info {
+      width: 170px;
+      justify-content: space-between;
+      align-items: center;
+      margin: 15px auto;
+      .name {
+        max-width: 157px;
+      }
+      .product-quantity {
+        align-items: center;
+        border: 1px solid #d9d9d9;
+        justify-content: space-between;
+        width: 102px;
+        button {
+          font-size: 1rem;
+          border: none;
+          padding: 10px;
+          svg {
+            fill: #8c8c8c;
+          }
+        }
+      }
+    }
+    .row {
+      height: 100%;
+    }
+
+    .left-part {
+      padding: 40px;
+      .title {
+        text-transform: capitalize;
+        text-align: center;
+      }
+      .note {
+        display: none;
+      }
+    }
+    .right-part {
+      padding: 0;
+    }
+  }
+  @media (min-width: 576px) {
+    top: 90px;
+    left: 100px;
+    right: 100px;
+    bottom: 90px;
+    max-width: 1140px;
+    max-height: 803px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 20px;
+    border-radius: 4px;
+    padding-bottom: 0px;
+    .left-part {
+      .title {
+        text-align: left;
+      }
+      .note {
+        margin-bottom: 50px;
+        display: inline-block;
+        margin-top: 20px;
+      }
+    }
+    .btn-submit button {
+      width: auto;
+    }
+  }
+}

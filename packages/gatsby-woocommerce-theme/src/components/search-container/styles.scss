@@ -1,0 +1,124 @@
+.search-modal {
+  background-color: #ffff;
+  height: 86vh;
+  width: 90vw;
+  margin: 7vh auto;
+  .search-modal-content {
+    height: 86vh;
+    position: relative;
+    outline: none;
+    .search-form {
+      margin: 0 20px;
+      input {
+        width: 100%;
+        display: inline-block;
+        font-family: "ProximaNova";
+        padding: 10px;
+        padding-left: 20px;
+        font-size: 18px;
+        margin-top: 60px;
+        border: 1px solid #d9d9d9;
+        border-radius: 0;
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      .btn-submit {
+        display: none;
+      }
+    }
+    .search-result {
+      height: 79%;
+      overflow: auto;
+      padding: 50px 20px 30px;
+      .result-product-container {
+        position: relative;
+        .result-product {
+          display: flex;
+          margin-bottom: 10px;
+          padding-bottom: 10px;
+          color: #141414;
+          border-bottom: 1px solid #d9d9d9;
+          .product-image {
+            cursor: pointer;
+            margin-right: 10px;
+            height: 80px;
+            width: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+              width: auto;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .product-info {
+            margin-top: 0;
+            .product-name {
+              cursor: pointer;
+              font-size: 16px;
+              margin-bottom: 0px;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              &:hover {
+                color: #d2232a;
+              }
+            }
+            .body-text {
+              font-size: 14px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              height: 25px;
+              display: -webkit-box;
+              -webkit-line-clamp: 1;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          }
+        }
+        .view-product {
+          padding-top: 3px;
+          padding-bottom: 3px;
+          background-color: #000000;
+          color: #ffffff;
+          border: 1px solid #000000;
+          border-radius: 0;
+          font-family: "ProximaNova";
+          font-weight: 700;
+          &:hover {
+            background-color: #ffffff;
+            color: #000000;
+          }
+        }
+        .add-to-cart-btn {
+          position: absolute;
+          bottom: 10px;
+          left: 90px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          width: 120px;
+        }
+      }
+    }
+    .search-all-container {
+      &.active {
+        border-top: 1px solid #141414;
+      }
+      &.un-active {
+        background-color: #f8f8f8;
+        height: 40px;
+      }
+      button {
+        color: blue;
+      }
+    }
+  }
+  @media (max-width: 576px) {
+    margin: 8vh 16px;
+  }
+}

@@ -1,0 +1,30 @@
+.you_may_product_quote-button{
+  width: fit-content ;
+  height: fit-content;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+ button{
+  width: fit-content ;
+  height: auto;
+  text-transform: uppercase;
+  font-family: "ProximaNova";
+  font-size: 10.09px;
+  line-height: 12px;
+  font-weight: 700;
+  border: 1px solid;
+  text-align: left;
+  padding: 7px 5px;
+  transition: 0.5s all;
+  color: #000000;
+  background-color: transparent;
+ 
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+  }
+ }
+}

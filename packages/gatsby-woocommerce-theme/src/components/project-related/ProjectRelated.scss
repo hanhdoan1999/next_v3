@@ -1,0 +1,31 @@
+.project-related {
+    margin-top: 41px;
+    .none{
+        display: none;
+      }
+    &_item_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        margin: 6px 0 52px 0;
+    }
+    .text-box {
+        &_heading {
+            font-family: "ProximaNova";
+            font-weight: 700;
+            font-size     : 17.4625px;
+            line-height   : 21px;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #000000;
+        }
+    }
+    .paginate-custom {
+        position: relative;
+        margin-bottom: 56px;
+        .disabled {
+            display: none;
+        }
+    }
+}

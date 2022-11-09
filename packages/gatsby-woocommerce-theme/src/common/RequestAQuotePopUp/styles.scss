@@ -1,0 +1,119 @@
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 3;
+}
+.request-a-quote.Modal {
+  position: absolute;
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  outline: none;
+  top: 40px;
+  left: 23px;
+  right: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+
+  .request-quote-popup {
+    .header {
+      position: relative;
+      align-items: center;
+      background-color: #f8f8f8;
+      padding: 50px 70px 20px 70px;
+      .title {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        letter-spacing: 0px;
+        text-align: center;
+        text-transform: capitalize;
+        margin: 0 auto;
+        color: #2aa0f5;
+      }
+    }
+
+    .request-steps {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      .step-container {
+        align-items: center;
+        justify-content: space-around;
+        svg {
+          margin-top: -20px;
+        }
+      }
+      .step {
+        flex-direction: column;
+        // justify-content: center;
+        // align-items: center;
+        margin-top: 20px;
+        .icon {
+          padding: 30px 20px 20px 20px;
+          border: 1px solid #2aa0f5;
+          border-radius: 50%;
+        }
+        .step-content {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 18px;
+          max-width: 280px;
+          padding-top: 20px;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 576px) {
+    top: 90px;
+    left: 100px;
+    right: 100px;
+    bottom: 90px;
+    max-width: 970px;
+    max-height: 278px;
+    border: 1px solid rgb(204, 204, 204);
+    padding: 20px;
+    border-radius: 4px;
+    padding-bottom: 0px;
+    button.close-btn {
+      border-radius: 50%;
+    }
+    .request-quote-popup {
+      .header {
+        position: relative;
+        align-items: center;
+        padding: 0;
+        background-color: #ffff;
+        .title {
+          font-size: 36px;
+          line-height: 42px;
+          letter-spacing: 1px;
+        }
+        .view-more {
+          position: absolute;
+          right: 0;
+          margin: 0;
+        }
+      }
+      .request-steps {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        .step {
+          margin-top: 30px;
+          .icon {
+            padding: 30px;
+          }
+          .step-content {
+            min-height: 56px;
+            max-width: 170px;
+          }
+        }
+      }
+    }
+  }
+}

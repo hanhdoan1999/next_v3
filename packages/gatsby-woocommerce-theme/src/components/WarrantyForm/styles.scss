@@ -1,0 +1,30 @@
+.warranty-form {
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+    &-title {
+        font-size: 40px;
+        line-height: 42px;
+        font-weight: 700;
+        font-family: 'FinancierDisplayText';
+        text-align: center;
+    }
+    .submit-button {
+        max-width: 300px;
+        width: 100%;
+        background-color: #000000;
+        color: #ffffff;
+        font-family: 'ProximaNova';
+        font-weight: 700;
+        text-transform: uppercase;
+        border: 1px solid transparent;
+        transition: all 0.5s;
+        margin: 0 auto;
+        cursor: pointer;
+        &:hover {
+            border: 1px solid #000000;
+            background-color: transparent;
+            color: #000000;
+        }
+    }
+}

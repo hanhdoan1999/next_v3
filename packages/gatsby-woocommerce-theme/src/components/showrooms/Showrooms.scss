@@ -1,0 +1,115 @@
+.show-rooms.in-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-top:20px;
+  .text-box {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+  .footer__showr__list {
+    margin-top: 36px;
+    display: flex;
+    padding-left: 453px;
+    padding-right: 453px;
+    @media(max-width:480px) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .wrap__list__showroom {
+      @media(max-width:480px) {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+      }
+      .list_showroom {
+        min-width: 167px;
+        margin-right: 52px;
+        margin-top: -1px;
+        padding-right: 0px;
+        width: 100%;
+        &:last-child {
+          margin-right: 0px;
+        }
+        p {
+          &:first-child {
+            width: 100%;
+            // max-width: 95px;
+            font-weight: 700;
+            font-family: "ProximaNova";
+            font-size: 12.5px;
+            line-height: 20px;
+            font-style: normal;
+            color: #000000;
+          }
+          &:last-child{
+            font-family: "ProximaNova";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12.5px;
+            line-height: 20px;
+            color: #000000;
+            padding-bottom: 5px;
+            
+          }
+        }
+        .list_showroom-address{
+            width: 100%;
+            // max-width: 95px;
+            font-weight: 400;
+            font-family: "ProximaNova";
+            font-size: 12.5px;
+            line-height: 20px;
+            color: #000000;
+            font-style: normal;
+        }
+        span {
+          display: block;
+          font-family: "ProximaNova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12.5px;
+          line-height: 15px;
+          padding-bottom: 5px;
+          color: #d2232a;
+          &:hover {
+            text-decoration: underline;
+          }
+          i {
+            font-style: normal;
+            font-family: "ProximaNova";
+            font-weight: 400;
+          }
+          .list_showroom-phone {
+            font-family: "ProximaNova";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12.5px;
+            line-height: 15px;
+            color: #d2232a;
+          }
+        }
+        @media (max-width: 600px) {
+          margin-right: 10px;
+        }
+        @media(max-width: 540px) {
+          .you_may_product_quote-button {
+            margin: 0 auto;
+            margin-top: 5px;
+            button {
+              text-align: center;
+            }
+          }
+         }
+        @media (max-width: 480px) {
+          margin-right: 0px;
+        }
+      }
+      @media (max-width: 430px) {
+        padding: 0 20px;
+      }
+    }
+  }
+}

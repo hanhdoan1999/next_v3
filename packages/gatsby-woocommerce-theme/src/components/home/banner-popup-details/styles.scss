@@ -1,0 +1,119 @@
+@import "../../../common/ColorsBar/styles.scss";
+@import "../../../sass/0-settings/colors";
+
+.popup-product-details {
+  width: 12em;
+  padding: 10px 5px 10px 20px;
+  border-radius: 3px;
+  position: absolute;
+  background: #ffff;
+  border: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 500ms linear;
+  &.active {
+    opacity: 0.9;
+    visibility: visible;
+    cursor: pointer;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+    // opacity: 0.9;
+  }
+  &.top-right:after {
+    border-width: 0 20px 20px 0;
+    border-color: transparent #ffff transparent transparent;
+  }
+  &.top-left:after {
+    border-width: 20px 20px 0 0;
+    border-color: #ffff transparent transparent transparent;
+  }
+  &.bottom-left:after {
+    border-width: 20px 0 0 20px;
+    border-color: transparent transparent transparent #ffff;
+  }
+  &.right-top-left:after {
+    top: 99%;
+    left: 92%;
+    margin-left: -4px;
+  }
+  &.right-top-right:after {
+    top: 99%;
+    left: 3%;
+    margin-left: -5px;
+  }
+
+  &.left-top-left:after {
+    right: 0%;
+    margin-left: -5px;
+  }
+
+  &.left-top-right:after {
+    left: 0%;
+    margin-right: -5px;
+  }
+
+  &.left-bottom-right:after {
+    top: -17%;
+    left: 0%;
+  }
+
+  &.right-top-left {
+    top: 42%;
+    right: 40%;
+    margin-left: 10px;
+    border-bottom-right-radius: 0;
+  }
+  &.right-top-right {
+    top: 30%;
+    right: 7%;
+    border-bottom-left-radius: 0;
+  }
+  &.left-top-left {
+    top: 28%;
+    left: 4%;
+  }
+  &.left-top-right {
+    top: 48%;
+    left: 32%;
+  }
+  &.left-bottom-right {
+    bottom: 5%;
+    left: 21%;
+  }
+
+  .close-btn-banner {
+    position: absolute;
+    &.right-top-left,
+    &.left-top-left {
+      top: -10px;
+      left: -6px;
+    }
+    &.right-top-right,
+    &.left-top-right {
+      top: -10px;
+      right: -6px;
+    }
+    &.left-bottom-right {
+      bottom: -10px;
+      right: -6px;
+    }
+    svg {
+      font-size: 20px;
+    }
+  }
+  .product-name {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+    span {
+      color: #1e1e1e;
+    }
+    svg {
+      width: 2em;
+      height: 1.3em;
+    }
+  }
+}

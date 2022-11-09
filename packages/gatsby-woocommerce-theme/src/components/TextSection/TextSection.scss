@@ -1,0 +1,77 @@
+
+@mixin TextTitle {
+  font-style: normal;
+  font-weight: 700;
+  color: #000000;
+  margin-top: 20px;
+  margin-bottom: 11px;
+}
+@mixin Text {
+  font-size: 12.5px;
+  line-height: 16px;
+}
+
+.TextSectionWrapper {
+    padding-top: 29px;
+    padding-bottom: 65px;
+    background-color: #e7e4df;
+    font-family: "ProximaNova";
+    @include Text();
+    .TextSection {
+      max-width: 577px;
+      margin: 0 auto;
+      a {
+        color: #000000;
+        text-decoration: underline;
+        &:hover {
+          color: #d2232a;
+        }
+      }
+      blockquote {
+        color: #000000;
+        font-weight: 700;
+      }
+      ul li::before {
+        content: "•";
+        vertical-align: text-bottom;
+        margin-right: 5px;
+      }
+      h2 {
+        font-size: 20px;
+        line-height: 24px;
+        @include TextTitle();
+      }
+      h3 {
+        font-size: 18px;
+        line-height: 20px;
+        @include TextTitle();
+      }
+      h4 {
+        font-size: 16px;
+        line-height: 28px;
+        @include TextTitle();
+      }
+      p,li {
+        color: #000000;
+        margin-bottom: 16px;
+        @include Text();
+      }
+      // hr {
+      //   border: 0.1px solid #000000;
+      // }
+      // blockquote {
+      //   color: #000000;
+      //   font-weight: 700;
+      // }
+      // ul li::before {
+      //   content: "*";
+      //   font-size: 20px;
+      //   vertical-align: text-top;
+      //   line-height: 20px;
+      //   margin-right: 5px;
+      // }
+      @media (max-width:600px) {
+        padding: 16px;
+      }
+    }
+}

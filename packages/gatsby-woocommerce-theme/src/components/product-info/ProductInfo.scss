@@ -1,0 +1,323 @@
+.product-info {
+  font-family: "ProximaNova" !important;
+  max-width: 500px;
+  padding-right: 50px;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding-left: 10px;
+
+  @media (max-width: 992px) {
+    width: 100%;
+    padding: 0 20px;
+    max-width: initial;
+    margin-left: 0;
+  }
+
+  &_name {
+    font-size: 40.8751px;
+    font-weight: 700;
+    font-family: "ProximaNova";
+    color: #000000;
+    line-height: 41px;
+    margin-bottom: 14px;
+  }
+  &_stock {
+    font-family: "ProximaNova";
+    font-weight: 300;
+    margin-bottom: 5px;
+    .stocked {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #4cd223;
+      margin-right: 10px;
+    }
+    .made-order {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: orange;
+      margin-right: 10px;
+    }
+    .discontinued {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #d2232a;
+      margin-right: 10px;
+    }
+  }
+  .null {
+    display: none;
+  }
+
+  &_description {
+    @media (max-width: 1024px) and (min-width: 768px) {
+      padding-right: 25px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 24px;
+      font-family: "ProximaNova";
+      font-weight: 300;
+      color: #000000;
+      display: -webkit-box;
+      -webkit-line-clamp: 10;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      word-break: break-word;
+    }
+  }
+
+  &_colors {
+    margin-top: 20px;
+
+    p {
+      font-size: 14.9401px;
+      line-height: 18px;
+      font-family: "ProximaNova";
+      font-weight: 700;
+      font-style: normal;
+      color: #000000;
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 15px;
+      .non_color {
+        position: relative;
+        // border: 1px solid transparent;
+        border : 3px double white;
+        width: 23px;
+        height: 23px;
+        padding: 0;
+        border-radius: 50%;
+        margin-right: 3px;
+        margin-bottom: 3px;
+        background-color: #f6f6f6;
+        cursor: pointer;
+        &:hover {
+          border: 1px solid #000000;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 45%;
+          width: 2px;
+          background-color: #d2232a;
+          height: 100%;
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    &_circle {
+      // border: 1px solid transparent;
+      border : 3px double white;
+      width: 23px;
+      height: 23px;
+      padding: 0;
+      border-radius: 50%;
+      margin-right: 3px;
+      margin-bottom: 3px;
+      transition: 0.5 all;
+      &:hover,
+      .color_atv {
+        border: 1px solid #000000;
+      }
+    }
+    .color_atv {
+      border: 1px solid #000000;
+    }
+  }
+
+  &_icons {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    // margin-top: 30px;
+
+    &-wrapper {
+      width: 30px;
+      object-fit: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 26.2px;
+
+      img {
+        width: 22px;
+        margin-bottom: 5px;
+      }
+
+      p {
+        font-family: "ProximaNova";
+        font-size: 6.91514px;
+        line-height: 8px;
+        font-weight: 700;
+        text-align: center;
+        color: #000000;
+        font-style: normal;
+      }
+    }
+  }
+
+  &_quote-button {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    margin-bottom: 20px;
+    .quote-button {
+      text-transform: uppercase;
+      font-family: "ProximaNova";
+      font-size: 11.5899px;
+      // line-height: 14px;
+      font-weight: 700;
+      border: 1px solid;
+      transition: 0.5s all;
+      color: #000000;
+      padding: 0 20px;
+      height: 36px;
+      &:hover {
+        background-color: black;
+        color: #ffffff;
+      }
+
+    }
+    .product-quantity {
+      // margin-left: 8px;
+      align-items: center;
+      border: 1px solid #d9d9d9;
+      justify-content: space-between;
+      width: 130px;
+      .quantity {
+        width: 40px;
+        border: none;
+        outline: none;
+        text-align: center;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type=number] {
+        -moz-appearance: textfield;
+      }
+      span{
+        color:#000000;
+      }
+      button {
+        font-size: 1rem;
+        border: none;
+        padding: 10px;
+        svg {
+          fill: #8c8c8c;
+        }
+      }
+    .disableBtn {
+      pointer-events: none;
+    }
+    }
+  }
+
+  &_pin-button {
+    display: flex;
+    margin-top: 18.11px;
+
+    button {
+      height: 27px;
+      margin-right: 18px;
+      text-transform: uppercase;
+      font-family: "ProximaNova";
+      font-size: 11.5899px;
+      line-height: 14px;
+      font-weight: 700;
+      border: none;
+      background-color: #e7e4df;
+      border: 1px solid transparent;
+      transition: 0.5s all;
+      color: #000000;
+
+      &:first-child {
+        width: 195.32px;
+        height: 34.92px;
+      }
+
+      &:last-child {
+        width: 155.22px;
+        height: 34.92px;
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: #ffffff;
+        border: 1px solid #000;
+      }
+    }
+  }
+  .simple {
+    margin-top: 30px;
+    p {
+      color: #000000;
+      font-family: "ProximaNova";
+      font-style: normal;
+      font-size: 13.7581px;
+      line-height: 16px;
+      letter-spacing: 0.07em;
+      font-weight: 400;
+      list-style: disc;
+    }
+    br {
+      display: block;
+      margin-bottom: 4px;
+      content:"";
+    }
+  }
+  &_features {
+    @media (max-width: 1024px) and (min-width: 768px) {
+      padding-right: 20px;
+    }
+
+    h3 {
+      color: #000000;
+      font-family: "ProximaNova";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 13.8626px;
+      line-height: 17px;
+      letter-spacing: 0.07em;
+      margin-top: 20.7px;
+    }
+    ul {
+      margin-left: 13px;
+    }
+
+    ul {
+      li {
+        color: #000000;
+        font-family: "ProximaNova";
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.5;
+        letter-spacing: 0.07em;
+        font-weight: 400;
+        list-style: disc;
+        margin-top: 3px;
+
+        &::before {
+          margin-right: 3px;
+          font-size: 28px;
+          vertical-align: sub;
+        }
+      }
+    }
+  }
+}

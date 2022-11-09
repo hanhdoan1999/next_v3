@@ -1,0 +1,121 @@
+@import '../../../fonts/fonts.css';
+@import '../../../sass/0-settings/colors';
+.header__top {
+  background-color:#e7e4e0 ;
+  .container-custom {
+    max-width: 1300px;
+    width:100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+  .header-top-content {
+    display:flex;
+    align-items: center;
+    justify-content: space-between; 
+    height: 46.07px;
+    padding-left: 45px;
+    padding-right: 45px;
+    @media (max-width:1200px) {
+      padding:0 20px
+    }
+    @media (max-width:768px) {
+      height: auto;
+      padding: 10px 0;
+      flex-direction: column !important;
+    }
+    .header-top-left {
+      color: #000000;
+      letter-spacing: 0.06em;
+      line-height: 19px;
+      font-family: "ProximaNova";
+      font-weight: 400;
+      font-size: 15.5159px;
+      text-align: center;
+      @media (max-width:768px) {
+        padding-top: 10px;
+        font-size: 14px;
+      }
+      @media (max-width:375px) {
+        font-size: 10px;
+      }
+      p{
+        margin-top: 2px;
+      }
+    }
+    .header-top-right {
+      display:flex;
+      align-items: center;
+      height: 100%;
+      margin-right: -20px;
+      @media (max-width:1200px) {
+        margin-right: 0;
+      }
+      a.first-level , span.first-level , .phone-block {
+        height: 100%;
+        line-height:21px;
+        display:block;
+        padding: 0px 20px;
+        cursor: pointer;
+        color:#D2232A;
+        font-size: 19.2914px;
+        font-family: "FinancierDisplayText";
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        font-style: italic;
+        @media (max-width:768px) {
+          font-size: 18px;
+        }
+        @media (max-width:400px) {
+          font-size: 15px;
+        }
+        @media (max-width:350px) {
+          padding: 0px 10px;
+        }
+        &:hover {
+          color:#fff !important;
+          background-color:#D2232A;
+        }
+      }
+      .phone-block {
+        position: relative;
+        .lst-mobile{
+          display: none;
+          position: absolute;
+          top: 46.06px;
+          left: 0;
+          right: 0;
+          width: 210px;
+          background-color: #e7e4e0;
+          padding: 5px 0 0 20px;
+          z-index: 1;
+          @media (max-width:768px) {
+            top: 35.06px;
+          }
+          li>a {
+            height: 30px;
+            line-height:21px;
+            display:block;
+            cursor: pointer;
+            color:#000000;
+            font-size: 17px;
+            font-family: "FinancierDisplayText";
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            font-style: italic;
+            &:hover {
+              color:#D2232A;
+            }
+          }
+        }
+        &:hover {
+          .lst-mobile{
+            display: block;
+          }
+        }
+      }
+    }
+ }
+}
+

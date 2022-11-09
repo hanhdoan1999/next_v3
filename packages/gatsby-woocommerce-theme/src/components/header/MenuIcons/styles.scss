@@ -1,0 +1,16 @@
+.nav-icons {
+	.icon-item {
+		position: relative;
+		.total-qty {
+			position: absolute;
+			top: -5px;
+			left: 10px;
+			background: #2aa0f5;
+			border-radius: 50%;
+			padding: 2px 6px;
+			font-size: 9px;
+			color: #ffff;
+			display: inline-block;
+		}
+	}
+}

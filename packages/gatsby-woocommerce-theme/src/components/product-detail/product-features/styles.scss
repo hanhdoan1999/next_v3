@@ -1,0 +1,47 @@
+.product-detail-features-container {
+  .disable-collapse {
+    pointer-events: none;
+  }
+  .title {
+    // font-family: 'worksans bold';
+    font-size: 18px;
+    line-height: 42px;
+    font-weight: 600;
+  }
+  .features-text {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  .feature {
+    margin-bottom: 30px;
+    line-height: 16px;
+
+    .feature-title {
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .feature-value {
+      font-size: 12px;
+      margin-left: 50px;
+      text-transform: capitalize;
+    }
+  }
+  .product-img {
+    border-radius: 5px;
+  }
+  @media (min-width: 768px) {
+    font-size: 36px;
+    .feature {
+      .feature-title {
+        font-size: 18px;
+      }
+      .feature-value {
+        font-size: 14px;
+      }
+    }
+  }
+  .marSimpleProduct {
+    margin-bottom: 46px;
+    margin-top: auto;
+  }
+}

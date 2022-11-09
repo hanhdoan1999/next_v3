@@ -1,0 +1,72 @@
+.icon-box_heading {
+  width: 100%;
+  text-align: center;
+  font-family: "FinancierDisplayText";
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  span {
+    font-weight: 400;
+    font-family: 'ProximaNova';
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+.icon-box {
+  display: flex;
+  margin: 0 auto;
+  align-items: flex-start;
+  max-width: 960px;
+  gap:20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 23px 0 48px 0;
+  margin: 0 auto;
+  &_item {
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0 32px;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    &:hover {
+      h3 {
+        color: #d2232a;
+      }
+    }
+    @media (max-width: 615px) {
+      margin: 10px 15px 10px 15px;
+    }
+     @media (max-width: 345px) {
+      margin: 10px 10px 10px 10px;
+    }
+    h3 {
+      font-weight: 700;
+      font-family: "ProximaNova";
+      font-size: 16.12px;
+      line-height: 18.54px;
+      color: #000000;
+      margin-top: 12px;
+      transition: 0.5s all;
+      letter-spacing: 0.15em;
+    }
+    p {
+      font-family: "ProximaNova";
+      font-size: 13.12px;
+      line-height: 15.54px;
+      color: #000000;
+    }
+    img {
+      width: auto;
+      object-fit: cover;
+    }
+  }
+}

@@ -1,0 +1,128 @@
+.multi-range-slider-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'worksans';
+  .slider {
+    position: relative;
+    width: 210px;
+  }
+
+  .slider__track,
+  .slider__range,
+  .slider__left-value,
+  .slider__right-value {
+    position: absolute;
+  }
+
+  .slider__track,
+  .slider__range {
+    border-radius: 3px;
+    height: 5px;
+  }
+
+  .slider__track {
+    background-color: #ced4da;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .slider__range {
+    background-color: #2d2d2d;
+    z-index: 2;
+  }
+
+  .slider__left-value,
+  .slider__right-value {
+    // color: #dee2e6;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .slider__left-value {
+    left: 2px;
+  }
+
+  .slider__right-value {
+    right: 2px;
+  }
+
+  /* Removing the default appearance */
+  .thumb,
+  .thumb::-webkit-slider-thumb {
+    -webkit-appearance: none;
+  }
+
+  .thumb {
+    pointer-events: none;
+    position: absolute;
+    height: 0;
+    width: 200px;
+    outline: none;
+  }
+
+  .thumb--left {
+    z-index: 3;
+  }
+
+  .thumb--right {
+    z-index: 4;
+  }
+
+  /* For Chrome browsers */
+  .thumb::-webkit-slider-thumb {
+    background-color: #2d2d2d;
+    border: none;
+    cursor: pointer;
+    height: 14.81px;
+    width: 7px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+    border-radius: 0px 0px 510px 510px;
+  }
+
+  /* For Firefox browsers */
+  .thumb::-moz-range-thumb {
+    background-color: #2d2d2d;
+    border: none;
+    cursor: pointer;
+    height: 14.81px;
+    width: 7px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+    border-radius: 0px 0px 510px 510px;
+  }
+}
+
+.btn-price {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  span {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border: 1px solid #5c5c5c;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    $breakpoint-desktops: 992px;
+    @media (min-width: $breakpoint-desktops) {
+      width: 80px;
+    }
+    /* Small devices (tablets, 768px and up) */
+    $breakpoint-tablets: 768px;
+    @media (min-width: $breakpoint-tablets) {
+      width: 52px;
+    }
+
+    /* Large devices (large desktops, 1200px and up) */
+    $breakpoint-largedesktops: 1200px;
+    @media (min-width: $breakpoint-largedesktops) {
+      width: 96px;
+    }
+  }
+}

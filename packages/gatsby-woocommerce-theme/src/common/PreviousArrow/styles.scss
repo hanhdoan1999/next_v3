@@ -1,0 +1,20 @@
+.landing-slider {
+  .slick-arrow.slick-next {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 57%;
+    margin-left: 40px;
+    &:before {
+      // content: '';
+      visibility: hidden;
+    }
+  }
+  @media (max-width: 768px) {
+    .slick-arrow.slick-next {
+      left: 40%;
+      transform: translate(-50%, 0);
+      margin-top: 13px;
+    }
+  }
+}

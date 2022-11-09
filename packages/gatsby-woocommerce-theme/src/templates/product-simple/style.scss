@@ -1,0 +1,23 @@
+.product-simple {
+  justify-content: space-around;
+    display: flex;
+  margin-bottom: 51.19px;
+  .gatsby-image-wrapper  img {
+    max-height: 600px;
+    width: auto;
+    margin-top: 78px;
+    margin-right: 80px;
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    .gatsby-image-wrapper  img {
+      max-height: 400px;
+      width: auto;
+      margin-top: 20px;
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 576px) {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,8 @@
+.video__out__store__page{
+    height: 731px;
+    margin: auto auto 15px;
+    max-width: 1300px;
+    @media(max-width: 600px) {
+      height: auto;
+    }
+  }

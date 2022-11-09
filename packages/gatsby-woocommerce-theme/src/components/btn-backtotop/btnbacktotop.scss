@@ -1,0 +1,36 @@
+.wrap-btn__backtotop {
+  display: block;
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  max-width: 40px;
+  text-align: center;
+  z-index: 3;
+  //    .icon{
+  //     svg{
+  //        font-size: 40px;
+  //         color:#D2232A ;
+  //         path{
+  //             height: 100%;
+  //             width: 100%;
+  //         }
+  //     }
+  //    }
+  br {
+    display: none;
+  }
+  p {
+    color: #d2232a;
+    font-weight: 400;
+    font-size: 9.6px;
+    line-height: 12px;
+    font-family: "ProximaNova";
+    cursor: pointer;
+    font-weight: 700;
+  }
+  svg {
+    path {
+      margin-bottom: 5px;
+    }
+  }
+}

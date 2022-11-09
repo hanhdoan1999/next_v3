@@ -1,0 +1,132 @@
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+.testimonial {
+  .slick-prev:before,
+  .slick-next:before {
+    visibility: hidden;
+  }
+
+  .text-content {
+    p.title {
+      font-size: 16px;
+      font-weight: 600;
+      color: #282828;
+      margin-top: 20px;
+
+      @include mobile {
+        margin-top: 50px;
+      }
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      color: #5c5c5c;
+      margin-bottom: 30px;
+    }
+    p.customer {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .section-title {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .image-content {
+      svg {
+        display: none;
+      }
+    }
+  }
+
+  @include mobile {
+    .section-title {
+      margin-bottom: 150px;
+      /* H2-mobile */
+
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 37px;
+      text-align: center;
+      letter-spacing: 1px;
+
+      /* Style */
+
+      color: #282828;
+    }
+
+    .landing-slider {
+      .slick-arrow {
+        display: block !important;
+      }
+    }
+
+    .image-content {
+      img {
+        min-height: 252px;
+      }
+      svg {
+        z-index: 1;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%) translateY(0) translateZ(0);
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    .section-title {
+      max-width: 350px;
+    }
+    .text-content {
+      padding-left: 30px;
+      p.title {
+        margin-top: 120px;
+        font-size: 24px;
+        line-height: 36px;
+      }
+      p {
+        line-height: 26px;
+      }
+    }
+    .image-content {
+      position: relative;
+      padding-top: 50px;
+      padding-right: 40px;
+      img {
+        min-height: 345px;
+        object-fit: cover;
+      }
+      svg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 2;
+      }
+    }
+    .slick-initialized {
+      .slick-arrow {
+        svg {
+          &:hover {
+            path {
+              fill: #2aa0f5;
+            }
+          }
+        }
+      }
+    }
+  }
+}

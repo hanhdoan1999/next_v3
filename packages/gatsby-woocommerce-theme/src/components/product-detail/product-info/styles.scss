@@ -1,0 +1,111 @@
+// .share-product svg path {
+//   fill: #5c5c5c;
+// }
+.product-info-container {
+  font-size: 18px;
+  font-family: 'worksans';
+  font-size: 12px;
+  .product-name {
+    margin-top: 20px;
+    font-size: 24px;
+    font-family: 'worksans bold';
+  }
+  .stars {
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+  .product-des {
+    font-size: 12px;
+  }
+  .other-info {
+    margin-top: 30px;
+    padding-bottom: 1px;
+    .product-info-title {
+      margin-right: 70px;
+      width: 100px;
+      display: inline-block;
+      font-weight: 600;
+      // @media (max-width:576px) {
+      //   width: 50px;
+      // }
+      @media (max-width: 576px) {
+        margin-right: 5px;
+        width: 130px;
+      }
+    }
+    .product-info-select {
+      width: 250px;
+      @media (max-width: 576px) {
+        width: 100%;
+      }
+    }
+    .other-info-row {
+      margin-bottom: 15px;
+    }
+    .product-category {
+      .item {
+        width: fit-content;
+        border: 1px solid #424040;
+        padding: 5px;
+        margin-right: 5px;
+        &:first-child {
+          margin-right: 5px;
+          margin-bottom: 5px;
+        }
+      }
+      .product-category-mobile {
+        @media (max-width: 576px) {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+
+  .main-features-container {
+    margin-bottom: 60px;
+    .feature-text {
+      font-size: 12px;
+    }
+    svg {
+      width: 31px;
+      height: 31px;
+    }
+  }
+  .action-buttons-container {
+    position: inherit;
+    font-size: 14px;
+    margin-bottom: 62px;
+    .product-action {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      @media (max-width: 576px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+    }
+  }
+  // .share-product {
+  //   font-size: 14px;
+  //   .share-to {
+  //     margin-right: 40px;
+  //   }
+  //   svg {
+  //     margin-right: 30px;
+  //   }
+  // }
+  @media (min-width: 576px) {
+    .product-name {
+      font-size: 36px;
+      margin-top: 0px;
+    }
+    .stars {
+      margin-top: 33px;
+      margin-bottom: 33px;
+    }
+    .product-des {
+      font-size: 16px;
+    }
+  }
+}

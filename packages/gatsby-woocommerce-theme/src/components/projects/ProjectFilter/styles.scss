@@ -1,0 +1,125 @@
+.project-filter {
+  .project-filter-form {
+    background-color: #e7e4df;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 49px;
+    margin-top: -70px;
+    .industry-option,
+    select {
+      cursor: pointer;
+      text-transform: capitalize;
+      background-color: #fff;
+      justify-content: center;
+      text-align: center;
+    }
+    .project-filter {
+      margin-top: 30px;
+      margin-bottom: 40px;
+      font-family: "worksans";
+      font-size: 18px;
+      span {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+    }
+    .btn-filter-project {
+      margin-top: 10px;
+      margin-bottom: 50px;
+      width: 50%;
+      color: #000000;
+      background-color: #e7e4df;
+      border: 1px solid #000000;
+    }
+    .my-select {
+    margin-right: 20px;
+
+      .select-item {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: "ProximaNova";
+        font-style: normal;
+        text-transform: uppercase;
+        padding: 4px 19px 4px 21px ;
+        border-radius: none;
+        font-size: 9px;
+        line-height: 17px;
+        letter-spacing: 0.06em;
+        border: 0.5px solid #000000;
+        font-weight: 700;
+        text-align: center;
+        text-align: --webkit-center !important;
+        &:hover{
+          background-color: #E7E4DF;
+          color: #000000;
+          transition: 0.5s all;
+          border: 0.5px solid #000000;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 5px;
+        }
+      }
+      .industry-option {
+        color: #000000;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+    .my-select:last-child {
+      margin-right: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .project-filter-form {
+      // flex-direction: row;
+      width: auto;
+      padding-bottom: 34px;
+      margin-top: -14px;
+      padding-top: 13px;
+      flex-wrap: wrap;
+    }
+    .select-item {
+      // flex-direction: column;
+      // width: 100%;
+       text-align: center;
+    }
+    
+  }
+  @media(max-width: 480px) {
+    .project-filter-form {
+      flex-direction: column;
+    }
+    .project-filter-form .my-select {
+      margin-right: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    .project-filter-form {
+      // flex-direction: row;
+      width: auto;
+      padding-bottom: 34px;
+      margin-top: -14px;
+      padding-top: 13px;
+      .select-item {
+        padding: 7px;
+        // width: auto;
+        margin: 0 auto;
+        text-align: center;
+        .form-select {
+          margin-left: 5px;
+        }
+        &:focus-visible {
+          outline: none;
+        }
+      }
+      .btn-filter-project {
+        margin-left: 30px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        width: auto;
+        text-align: center;
+      }
+    }
+    
+  }
+}

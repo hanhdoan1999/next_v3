@@ -1,0 +1,44 @@
+.bread-crumb {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+    padding: 1.5rem 0;
+    // background-color: #f8f8f8;
+    // margin-bottom: 35px;
+    &.mrt-30 {
+      margin-top: 30px;
+      margin-bottom: 112px;
+    }
+    ul {
+      max-width: 1140px;
+      margin: 0 auto;
+      a {
+        display: block;
+        // margin: 0 8px;
+        font-family: 'WorkSans';
+        font-size: 14px;
+        line-height: 16px;
+        color: #999999;
+        box-sizing: border-box;
+        height: 15px;
+        height: 18px;
+        transition: 0.3s;
+        // border-bottom: 1px solid;
+        &:hover {
+          border-bottom: 1px solid #999999;
+          box-sizing: border-box;
+        }
+      }
+      span {
+        margin: 0 6px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #999999;
+      }
+
+      &.pointer {
+        cursor: pointer;
+      }
+    }
+  }
+}

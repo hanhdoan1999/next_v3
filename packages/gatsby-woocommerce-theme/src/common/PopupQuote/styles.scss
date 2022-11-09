@@ -1,0 +1,61 @@
+.Modal.popup-quote-container {
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  right: 100px;
+  bottom: 90px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  .close-btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    padding: 0px;
+    background-color: #2d2d2d;
+    border: none;
+    svg {
+      font-size: 1.5em;
+      fill: #fff;
+    }
+  }
+  .btn-submit button {
+    margin-top: 20px;
+    background: #0c71c3;
+  }
+  .quote-img {
+    width: 200px;
+    height: 200px;
+    padding-bottom: 20px;
+  }
+  .form-field {
+    margin-bottom: 8px;
+    // padding: 0 8px;
+    input {
+      padding: 8px;
+      width: 100%;
+      // max-width: 800px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    div {
+      color: red;
+    }
+  }
+}
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  inset: 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}

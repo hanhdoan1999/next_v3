@@ -1,0 +1,45 @@
+.category-description {
+  background-color: #f8f8f8;
+  margin-bottom: 30px;
+  margin-bottom: 80px;
+  margin-top: 20px;
+  &-content {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    margin: -15px 0;
+    &:hover {
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+  }
+  .wp-block-columns {
+    font-family: 'WorkSans';
+    margin: 1rem;
+    line-height: 26px;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    p {
+      margin-bottom: 3px;
+    }
+  }
+  @media (max-width: 576px) {
+    background-color: #fff;
+    margin-bottom: 0;
+    .category-description-content {
+      flex-wrap: wrap;
+    }
+    img {
+      margin: 0;
+    }
+    .wp-block-columns {
+      margin: 1rem 0;
+    }
+  }
+}

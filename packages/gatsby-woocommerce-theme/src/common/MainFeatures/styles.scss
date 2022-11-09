@@ -1,0 +1,21 @@
+.main-features-container {
+  display: none;
+  svg {
+    width: 30px;
+    height: 30px;
+  }
+  @media (min-width: 576px) {
+    display: grid;
+    width: 100%;
+    font-size: 12px;
+    line-height: 9px;
+    margin: 0 auto;
+    margin-top: 0.625rem;
+    margin-bottom: 0.625rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    .feature-text {
+      margin-left: 6px;
+    }
+  }
+}

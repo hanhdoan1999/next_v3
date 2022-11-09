@@ -1,0 +1,117 @@
+.team-member {
+  margin: 36px 73px 44px 73px;
+  .team-member_title {
+    text-align: center;
+    font-size: 26.25px;
+    line-height: 26.31px;
+    color: #000000;
+    font-weight: 500;
+    margin-bottom: 28px;
+    font-family: "FinancierDisplayText";
+  }
+  .team-member_content {
+    @media (max-width: 576px) {
+      text-align: center;
+    }
+    .team-name {
+      font-size: 20.69px;
+      line-height: 22.45px;
+      color: #000000;
+      font-weight: 500;
+      font-family: "FinancierDisplayText";
+      margin-top: 12.89px;
+      margin-bottom: 12.89px;
+      @media (max-width: 1440px) {
+        margin-bottom: 5px;
+      }
+      @media (max-width: 992px) {
+        font-size: 17px;
+        line-height: 20px;
+      }
+    }
+    .team-position {
+      font-size: 13.58px;
+      line-height: 16.54px;
+      color: #000000;
+      font-weight: 700;
+      font-family: "ProximaNova";
+      @media (max-width: 992px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    .team-location {
+      font-size: 13.58px;
+      line-height: 17px;
+      color: #000000;
+      font-weight: 500;
+      font-family: "ProximaNova";
+      @media (max-width: 992px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+    .team-phone {
+      margin-top: 5px;
+    }
+    .team-email, .team-phone {
+      font-size: 13.58px;
+      line-height: 17px;
+      color: #000000;
+      font-weight: 500;
+      font-family: "ProximaNova";
+      display:block;
+      &:hover{
+        color: #d2232a;
+      }
+    }
+    .row {
+      margin: 0;
+      justify-content: center;
+      .member-item {
+        padding-right: 2.5px;
+        padding-left: 2.5px;
+        padding-bottom: 22px;
+      }
+    }
+    &__row1 {
+      @media (max-width: 900px) {
+        padding: 0 20px;
+      }
+      .row {
+        justify-content: center;
+        max-width: unset;
+        margin-right: 0;
+        margin-left: 0;
+        .col {
+          max-width: 284.46px;
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 2.5px;
+          margin-right: 2.5px;
+        }
+      }
+    }
+    &__row2 {
+      padding-top: 16px;
+      @media (max-width: 900px) {
+        padding: 0 65px;
+      }
+      .row {
+        justify-content: center;
+        max-width: unset;
+        margin-right: 0;
+        margin-left: 0;
+        .col {
+          max-width: 284.46px;
+          width: 100%;
+          padding-left: 0;
+          padding-right: 0;
+          margin-left: 2.5px;
+          margin-right: 2.5px;
+        }
+      }
+    }
+  }
+}

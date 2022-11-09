@@ -1,0 +1,55 @@
+const ProductsFragment = `
+fragment ProductsFragment on googleNextrendproductSheet {
+  secondImage
+    id
+	sku
+    name
+    slug
+	images
+    type
+    categories
+    groupedProducts
+    shortDescription
+    description
+    stocked
+    stock
+	meta_ProductColour
+	meta_FurnIconsWarranty
+    meta_NextrendIconsUv
+    meta_NextrendIconsWarranty
+    meta_NextrendIconsWaterResistant
+    meta_Features
+    meta_FurnIconsIndoorOutdoor
+    meta_BrandImg
+    meta_NextrendIconsCatas
+    meta_NextrendIconsAfrdi
+    meta_NextrendIconsFastDispatch
+    meta_NextrendIconsStackable
+    weight__kg_
+	inStock_
+	productID
+	length__cm_
+	width__cm_
+	height__cm_
+	description
+    meta_Dimensions
+    meta_Swl
+    meta_AssemblyRequired
+    meta_MadeIn
+    videoLink
+    videoTitle
+    videoDescription
+    customValue1Name
+    customValue1Value
+    customValue2Name
+    customValue2Value
+    customValue3Name
+    customValue3Value
+    customValue4Name
+    customValue4Value
+    meta_Madein
+    meta_Prodhighlights
+    groupedProducts
+  }
+`;
+module.exports.ProductsFragment = ProductsFragment;

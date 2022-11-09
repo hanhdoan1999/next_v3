@@ -1,0 +1,85 @@
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+.showCallBtn {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+.action-buttons-container {
+  // position: absolute;
+  // flex: 1;
+  bottom: 10px;
+  font-size: 9px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+  font-family: 'Worksans';
+
+  @include mobile {
+    // grid-template-columns: 1fr 1fr;
+  }
+
+  .product-action {
+    padding: 5px 5px;
+    border: 1px solid #2aa0f5;
+    border-radius: 5px;
+    cursor: pointer;
+    svg {
+      // display: none;
+      width: 13px;
+      height: 13px;
+    }
+    &.btn-add {
+      cursor: pointer;
+      transition: 0.3s;
+      background-color: #2aa0f5;
+      color: #fff;
+      svg {
+        margin-right: 7px;
+      }
+      &:hover {
+        background-color: #2690dd;
+      }
+    }
+    @include mobile {
+      padding: 3px 5px;
+    }
+  }
+
+  .btn-request {
+    cursor: pointer;
+    color: #2aa0f5;
+    font-size: 20px;
+    transition: 0.3s;
+    &:hover {
+      background-color: #2aa0f5;
+      color: #fff;
+    }
+  }
+  .action-text {
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 9px;
+    a {
+      color: #2aa0f5;
+    }
+  }
+  @media (min-width: 576px) {
+    .product-action {
+      padding: 7.5px;
+      svg {
+        display: block;
+      }
+    }
+    .action-text {
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 12px;
+      margin-left: 9px;
+    }
+  }
+}

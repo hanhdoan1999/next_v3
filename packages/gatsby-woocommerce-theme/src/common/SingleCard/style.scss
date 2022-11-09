@@ -1,0 +1,205 @@
+@mixin mobile {
+  @media (max-width: 575px) {
+    @content;
+  }
+}
+
+.card-blog {
+  cursor: pointer;
+  // box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+  //   rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+  @include mobile {
+    box-shadow: none;
+  }
+
+  .card-blog__image {
+    border-radius: 5px 5px 0px 0px;
+    &.border-radius-reverse {
+      border-radius: 0px 0px 5px 5px !important;
+    }
+    .gatsby-image-wrapper {
+      border-radius: 5px 5px 0px 0px;
+    }
+    img.image-blog {
+      border-radius: 5px 5px 0px 0px;
+      max-height: 370px;
+      height: 370px;
+      width: 370px;
+      width: 100%;
+      object-fit: cover;
+      &.border-radius-reverse {
+        border-radius: 0px 0px 5px 5px !important;
+      }
+    }
+  }
+  .card-blog__content {
+    background-color: #ffffff;
+    padding: 30px 34px 34px 34px;
+    border-radius: 0px 0px 5px 5px;
+    font-family: 'WorkSans';
+    text-align: center;
+
+    @include mobile {
+      background-color: #f8f8f8;
+      padding: 30px 20px 32px;
+      text-align: left;
+    }
+
+    &.border-radius-reverse {
+      border-radius: 5px 5px 0px 0px;
+    }
+    p.cate-name {
+      font-size: 14px;
+      line-height: 16px;
+      color: #5c5c5c;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+
+      @include mobile {
+        font-family: 'WorkSans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+        /* #2D2D2D */
+        margin-bottom: 10px;
+        color: #2d2d2d;
+      }
+    }
+    p.blog-title {
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 21px;
+      color: #2d2d2d;
+      margin-bottom: 20px;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      min-height: 42px;
+
+      @include mobile {
+        font-family: 'WorkSans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+        /* #2D2D2D */
+        min-height: 1rem;
+        color: #2d2d2d;
+      }
+    }
+    .date-and-comment {
+      margin-bottom: 35px;
+
+      @include mobile {
+        font-family: 'WorkSans';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        /* identical to box height */
+
+        /* #999999 */
+        margin-bottom: 20px;
+        color: #999999;
+      }
+      span {
+        font-size: 14px;
+        line-height: 16px;
+        color: #5c5c5c;
+      }
+      span.date {
+        margin-right: 30px;
+
+        @include mobile {
+          margin-right: 10px;
+        }
+      }
+      .comment {
+        span.icon-comment {
+          margin-right: 5px;
+        }
+      }
+    }
+    .short-desc {
+      text-align: center;
+      color: #5c5c5c;
+      -webkit-line-clamp: 5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-box-orient: vertical;
+      display: -webkit-box;
+      min-height: 80px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 26px;
+      letter-spacing: 0px;
+      text-align: center;
+
+      @include mobile {
+        font-family: 'WorkSans';
+        text-align: left;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
+
+        /* #5C5C5C */
+
+        color: #5c5c5c;
+      }
+    }
+
+    .continue {
+      display: flex;
+      align-items: center;
+      font-family: 'WorkSans';
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      color: #2d2d2d;
+      margin-top: 20px;
+      cursor: pointer;
+
+      span {
+        margin-right: 6px;
+      }
+
+      img {
+        width: 12.5px;
+        height: 8px;
+        object-position: center;
+        object-fit: contain;
+      }
+    }
+  }
+
+  //add hover card item
+  transition: 0.3s;
+  span {
+    border-radius: 5px 5px 0 0;
+    display: block !important;
+    overflow: hidden;
+    img {
+      transition: 0.7s all ease-in-out !important;
+    }
+  }
+  &:hover {
+    -webkit-box-shadow: 0 0 10px #0000001a;
+    box-shadow: 0 0 10px #0000001a;
+    img {
+      transform: scale(1.05);
+    }
+  }
+}

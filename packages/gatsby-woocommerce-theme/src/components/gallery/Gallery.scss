@@ -1,0 +1,37 @@
+.gallery-component {
+  margin-bottom: 19px;
+  .gallery-image {
+    display:flex;
+    // max-height: 576.67px;
+    width: 100%;
+      &_left {
+        width: 69.3%;
+        // max-width: 865px;
+        // width: 100%;
+        margin-right: 10.34px;
+        aspect-ratio: 3/2;
+        img{
+          height:100%;
+        }
+        cursor: pointer;
+      }
+      &_right {
+        width: 34%;
+        // max-width: 424px;
+        // width: 100%;
+        aspect-ratio: 3/2;
+        cursor: pointer;
+        img{
+          height:50%;
+          &:first-child {
+            padding-bottom: 10.34px;
+          }
+        }
+      }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}

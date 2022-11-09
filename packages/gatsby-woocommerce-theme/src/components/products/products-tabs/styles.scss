@@ -1,0 +1,45 @@
+@import '../../../sass/0-settings/colors';
+.products-tabs {
+  display: none;
+  font-size: 18px;
+  font-family: 'WorkSans bold';
+  .routes {
+    font-size: 14px;
+    line-height: 16.42px;
+    color: #a59494;
+    font-weight: 400;
+    font-family: 'WorkSans';
+    margin-top: 30px;
+    margin-bottom: 65px;
+  }
+
+  .tab-title {
+    padding-top: 2.0625rem;
+    padding-bottom: 2.0625rem;
+  }
+  .tabs-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    .tab-item {
+      display: flex;
+      justify-content: center;
+      padding-left: 5px;
+      padding-top: 2.0625rem;
+      padding-bottom: 2.0625rem;
+      border-bottom: 3px solid#E5E5E5;
+      color: black;
+      .text {
+        line-height: 21.11px;
+      }
+      &:hover {
+        border-bottom: 3px solid #2aa0f5;
+      }
+    }
+    .active-tab {
+      border-bottom: 3px solid #2aa0f5;
+    }
+  }
+  @media (min-width: 576px) {
+    display: block;
+  }
+}

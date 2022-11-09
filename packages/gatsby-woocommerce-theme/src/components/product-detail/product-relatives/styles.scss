@@ -1,0 +1,25 @@
+.product-relatives-container {
+  margin-top: 100px;
+  .product-relatives-title {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 42.23px;
+    text-transform: capitalize;
+    color: #2D2D2D;
+  }
+  .see-all-btn {
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  @media (min-width: 577px) {
+    .product-relatives-title {
+      font-size: 36px;
+    }
+  }
+  @media (max-width:576px) {
+    .see-all-btn {
+      font-size: 14px;
+    }
+    margin-top: 0;
+  }
+}

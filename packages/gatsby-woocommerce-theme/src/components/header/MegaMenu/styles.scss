@@ -1,0 +1,115 @@
+.mega-menu-modal {
+  background: #ffff;
+  .mega-menu-mobile-header {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #f8f8f8;
+    .back-btn {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+    svg {
+      font-size: 1.8rem;
+    }
+  }
+}
+.mega-menu-content {
+  .mega-menu__main-cate {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .item {
+      text-align: center;
+      position: relative;
+      .item-cate-container {
+        position: absolute;
+        // bottom: 6px;
+        // left: 0;
+        // right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: left;
+        color: #ffff;
+        width: 170px;
+        height: 50px;
+        vertical-align: middle;
+        background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 0%,
+          rgba(0, 0, 0, 0.5) 100%
+        );
+        svg {
+          font-size: 0.7em;
+          margin-left: 11px;
+        }
+        .item-cate {
+          padding-left: 10px;
+        }
+        @media (max-width: 576px) {
+          bottom: 6px;
+        }
+      }
+    }
+  }
+  .mega-menu__other-cate {
+    margin-top: 30px;
+    padding-bottom: 70px;
+    display: grid;
+    margin-left: 22px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    grid-auto-columns: 198px 165px;
+
+    @media (max-width: 576px) {
+      font-size: 14px;
+      grid-auto-columns: 198px 156px;
+      a {
+        color: #000;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .mega-menu-content {
+    height: 100vh;
+    overflow: auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .mega-menu-content {
+    display: flex;
+    z-index: 3;
+    .mega-menu__main-cate-container {
+      padding: 0;
+    }
+    .mega-menu__main-cate {
+      margin-top: 0px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 20px;
+      .item-cate-container {
+        bottom: 0px;
+      }
+    }
+    .mega-menu__other-cate {
+      margin-top: -13px;
+      margin-left: 60px;
+      padding-bottom: 0px;
+    }
+  }
+}

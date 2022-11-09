@@ -1,0 +1,46 @@
+.the-benefits {
+  background: #f5f5f5;
+
+  .item {
+    background: #ffff;
+    margin-bottom: 30px;
+    padding: 50px 20px;
+    height: 331px;
+    border-radius: 10px;
+    transition: 0.3s;
+    svg {
+      margin-bottom: 30px;
+    }
+    .item-title {
+      margin-bottom: 20px;
+      color: #1e1e1e;
+    }
+    &:hover {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+  }
+  .item-text {
+    color: #1e1e1e;
+  }
+  .section-title {
+    margin-bottom: 70px;
+
+    .title {
+      width: 380px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .item {
+      margin-bottom: 0px;
+      padding: 20px;
+      height: auto;
+    }
+    .section-title {
+      flex-direction: column;
+      .title {
+        text-align: center;
+      }
+    }
+  }
+}

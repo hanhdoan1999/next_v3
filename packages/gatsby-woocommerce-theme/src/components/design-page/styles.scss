@@ -1,0 +1,129 @@
+.our-design-wrapper {
+  margin-bottom: 15px;
+  .our-design-top {
+    &_image {
+      img {
+        max-height: 507px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_content {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 27px;
+      padding-bottom: 32.33px;
+      background-color: #e7e4df;
+      &__inner {
+        // width: 30%;
+        max-width: 577px;
+        font-family: 'ProximaNova';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12.5px;
+        line-height: 16px;
+        color: #000000;
+        font-family: "ProximaNova";
+        @media (max-width: 768px) {
+          padding: 0 20px;
+        }
+        p.btn {
+          width: fit-content;
+          text-align: center;
+          margin: 20px auto;
+          display: block;
+       
+          a {
+            margin-left: 0 !important;
+            border: 1px solid;
+            transition: 0.5s all;
+            color: #000000;
+            font-size: 11.59px;
+            line-height: 14.12px;
+            font-weight: 700;
+            padding: 8px 12px;
+            font-family: "ProximaNova";
+            text-transform: uppercase;
+            color: #000;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            &:hover {
+              background-color: black;
+              color: #ffffff;
+            }
+            &::before {
+              display: none;
+            }
+          }
+        }
+        ul{
+          list-style-type: disc;
+          padding-left: 30px;
+          li {
+            line-height: 16px;
+            &::marker {
+              font-size: 15px;
+            }
+          }
+        }
+        h3 {
+          font-size: 15px;
+          line-height: 17px;
+          letter-spacing: 0.06em;
+          color: #000000;
+          font-weight: 700;
+          font-family: "ProximaNova";
+          margin-bottom: 13px;
+          margin-top: 13px;
+        }
+        h4 {
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.06em;
+          color: #000000;
+          font-weight: 700;
+          font-family: "ProximaNova";
+          margin-bottom: 13px;
+          margin-top: 13px;
+        }
+        p {
+          font-size: 12.5px;
+          line-height: 16px;
+          color: #000000;
+          font-family: "ProximaNova";
+          margin-bottom: 13px;
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+        a {
+          font-size: 12.5px;
+          line-height: 16px;
+          color: #D2232A;
+          font-weight: 400;
+          font-family: "ProximaNova";
+          text-align: center;
+          &:link {
+            text-decoration: none;
+          }
+  
+          &:visited {
+            text-decoration: none;
+          }
+  
+          &:hover {
+            text-decoration: underline ;
+          }
+  
+          &:active {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  
+}

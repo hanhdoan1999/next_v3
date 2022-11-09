@@ -1,0 +1,8 @@
+.product-list-container {
+  margin-top: 30px;
+  .row.equal {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+  }
+}

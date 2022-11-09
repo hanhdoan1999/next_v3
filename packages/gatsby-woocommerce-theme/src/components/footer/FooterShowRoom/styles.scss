@@ -1,0 +1,116 @@
+.footer__showr__list {
+  display: flex;
+  align-items: baseline;
+
+  #title {
+    font-weight: 700;
+    display: inline-block;
+    padding-right: 10px;
+    font-family: "ProximaNova";
+    font-style: normal;
+    font-size: 10.9232px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  .wrap__list__showroom {
+    display: flex;
+
+    @media (max-width: 1366px) {
+      padding-bottom: 20px;
+    }
+
+    @media (max-width: 550px) {
+      justify-content: flex-start;
+    }
+
+    @media (max-width: 530px) {
+      padding-bottom: 8px;
+      flex-wrap: wrap;
+    }
+
+    .list_showroom {
+      margin-right: 20px;
+      margin-top: -1px;
+
+      &:first-child {
+        max-width: 130px;
+      }
+
+      & {
+        max-width: 130px;
+      }
+
+      @media (max-width: 1366px) {
+        margin-right: 20px;
+      }
+
+      @media (max-width: 650px) {
+        padding-right: 0;
+      }
+
+      @media (max-width: 550px) {
+        padding-bottom: 10px;
+      }
+
+      p {
+        &:first-child {
+          font-weight: 700;
+          font-size: 11px;
+          font-family: "ProximaNova";
+          font-size: 10.9232px;
+          line-height: 13px;
+          color: #000000;
+          padding-bottom: 4px;
+        }
+
+        &:last-child {
+          font-family: "ProximaNova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10.9232px;
+          line-height: 17px;
+          color: #000000;
+          padding-bottom: 5px;
+        }
+      }
+      .list_showroom-address {
+        font-family: "ProximaNova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10.9232px;
+        line-height: 17px;
+        color: #000000;
+        padding-bottom: 5px;
+      }
+      span {
+        display: block;
+        font-family: "ProximaNova";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 10.9232px;
+        line-height: 17px;
+        color: #d2232a;
+
+        i {
+          font-style: normal;
+          font-family: "ProximaNova";
+          font-weight: 400;
+        }
+
+        .list_showroom-phone {
+          font-family: "ProximaNova";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10.9232px;
+          line-height: 17px;
+          color: #d2232a;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

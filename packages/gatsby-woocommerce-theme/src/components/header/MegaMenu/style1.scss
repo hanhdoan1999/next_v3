@@ -1,0 +1,108 @@
+.mega-menu-wrapper {
+  background-color: #e7e4e0;
+  max-width: 1300px;
+  padding: 45.25px 0 43.96px 0;
+  position: relative;
+  margin: 0 auto;
+  .btn-close{
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    svg {
+      width:21.5px;
+      height:21.5px;
+    }
+  }
+  .mega-menu-inner {
+    display:flex;
+    &_item {
+      padding-left: 45px;
+      width:18%;
+      &:first-child {
+        border-right: 1.29px solid white;
+      }
+      @media (max-width:1024px) {
+        padding-left: 30px;
+      }
+      @media (max-width:900px) {
+        width:23%;
+      }
+    }
+  }
+  .menu-l1 {
+    line-height: 15px;
+    color: #000000;
+    font-weight: 600;
+    font-family: "ProximaNova";
+    font-size: 14.9987px;
+    cursor: pointer;
+    padding-bottom: 12.02px;
+    &:hover {
+      color:#D2232A
+    }
+  }
+  .menu-l1-mobile-wrapper {
+    .menu-l1-mobile {
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  .menu-l2 {
+    line-height: 15px;
+    color: #000000;
+    font-weight: 400;
+    font-family: "ProximaNova";
+    font-size: 14.9987px;
+    padding-bottom: 12.02px;
+    cursor: pointer;
+      &:hover {
+        color:#D2232A
+      }
+    }
+  }
+  .last-column {
+    // &:nth-last-child(4) {
+    //   padding-bottom: 24.44px;
+    // }
+    // &:nth-last-child(-n+3) {
+    //   text-align: center;
+    //   padding: 8.5px 11px 8.5px 11px;
+    //   background-color: #e7e4df;
+    //   outline: none;
+    //   border: 1px solid #000000 !important;
+    //   letter-spacing: 0px;
+    //   font-size: 10.4551px;
+    //   color: #000000;
+    //   font-weight: 700;
+    //   font-family: "ProximaNova";
+    //   letter-spacing: 0.07em;
+    //   line-height: 13px;
+    //   width: 174.55px;
+    //   // height: 32.32px;
+    //   margin-bottom: 10px;
+    // &:hover {
+    //   background-color: #000000;
+    //   color: white;
+    //   border: 1px solid #000000 !important;
+    // }
+  // }
+  }
+
+  .mega-menu_parent {
+    // position: relative;
+    line-height: 25px;
+    color: #000000;
+    font-weight: bold;
+    font-family: "Proxima Nova";
+    cursor: pointer;
+  }
+.mega-menu-wrapper.none{
+  display: none;
+}
+
+
+
